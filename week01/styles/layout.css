@@ -43,13 +43,14 @@ grid-container-footer {
     grid-template-columns: 280px 300px 280px;
     background-color:#a9b8c3;
     padding: 20px;
+    
 }
 .grid-item {
     background-color: #F5F3F5;
     border: 1px solid black;
     padding: 20px;
     font-size: 18px;
-    text-align:left;
+    text-align:center;
 }
 .grid-item-image {
   width: 100%;
