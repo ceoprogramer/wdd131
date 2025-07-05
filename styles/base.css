@@ -1,0 +1,205 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables CSS para colores */
+:root {
+    --primary-color: #224268; /* Azul oscuro del header y nav */
+    --secondary-color: #007bff; /* Azul de enlaces */
+    --text-color: #333;
+    --light-text-color: #f0f0f0; /* Texto claro en header/nav/footer */
+    --card-bg: #f9f9f9; /* Fondo de las tarjetas */
+    --border-color: #eee;
+    --footer-bg: #1D4D72; /* Fondo del footer, similar al header */
+}
+
+h1, h2, h3 {
+    color: var(--light-text-color); /* default, elements with dark background */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+	background-color: #619bc2;
+	margin: 0 auto;
+	max-width: 1200px;
+    color: #fff;
+	
+}
+body {
+     font-family: "Roboto", sans-serif;
+     font-weight: 400;
+}
+h1 {
+    font-weight: 300;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration:overline;
+}
+
+.active {
+	color: yellow;
+}
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+       
+	}
+
+	nav ul li {
+		flex: 1 0 auto; /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+    }    
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Column bigger for "About Me", other for "Resources" */
+    gap: 1.5rem; /* space bettwen cards */
+    padding: 1.5rem;
+    max-width: 1200px; 
+    margin: 1.5rem auto; /* center grid */
+}
+.about-me-card, .resources-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column; /* title and content */
+}
+
+
+.about-me-card h2, .resources-card h2 {
+    background-color: var(--primary-color); /* Cards Titles Backgroud */
+    color: var(--light-text-color);
+    padding: 0.8rem 1rem;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem; /* Expand Title Background */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Content "About Me" Card (Grid image and Text) */
+.about-me-card .card-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Text Bigger than image */
+    gap: 1.5rem;
+}
+
+.about-me-card .text-content {
+   text-align: left;
+}
+
+.about-me-card .text-content p {
+    margin-bottom: 1rem;
+}
+
+
+.about-me-card .text-content h3 {
+    color: var(--text-color); /* H3 into card */
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+}
+
+.about-me-card .image-content {
+    text-align: center;
+}
+
+.about-me-card .card-content-inter {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* image Bigger than text */
+    gap: 1.5rem;
+}
+.card-content-inter .image-content {
+    text-align: left;
+}
+.card-content-inter .text-content {
+   text-align: justify;
+}
+
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* profile borders */
+    border: 1px solid var(--border-color); /* ligth border */
+}
+
+
+
+
+
+.flag-image {
+    max-width: 120px; /* flag size */
+    height: auto;
+    display: block; /* center with margin auto */
+    margin: 1rem auto 0.5rem auto;
+    border: 1px solid var(--border-color);
+}
+
+.flag-caption {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 0;
+}
+
+.resources-card ul {
+    
+    padding: 10;
+    margin: 10;
+}
+
+.resources-card li {
+    margin-bottom: 1rem;
+}
+
+.resources-card li a {
+    color: var(--secondary-color);
+    display: block;
+    padding: 0.2rem 0;
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9em;
+}
+
+.main-footer p {
+    margin: 0.5rem 0;
+}
+
+.main-footer .fas {
+    color: var(--light-text-color); /* Color de los íconos */
+    margin: 0 0.3rem;
+}
