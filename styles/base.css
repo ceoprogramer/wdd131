@@ -21,11 +21,13 @@ h1, h2, h3 {
 
 header {
     display: flexbox;
+    flex-direction: column;
     justify-content: center;
 	background-color: #619bc2;
 	margin: 0 auto;
 	max-width: 1200px;
     color: #fff;
+    text-align: center;
 	
 }
 body {
