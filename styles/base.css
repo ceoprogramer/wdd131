@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 
 header {
-    display: flex;
+    display: flexbox;
     justify-content: center;
 	background-color: #619bc2;
 	margin: 0 auto;
@@ -81,13 +81,15 @@ nav a:hover {
     margin: 1.5rem auto; /* center grid */
 }
 .about-me-card, .resources-card {
+    display: flex;
+    flex-direction: column; /* title and content */
     background-color: var(--card-bg);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     min-height: 400px; 
-    display: flex;
-    flex-direction: column; /* title and content */
+   
+    
 }
 
 
@@ -199,6 +201,6 @@ nav a:hover {
 }
 
 .main-footer .fas {
-    color: var(--light-text-color); /* Color de los íconos */
+    color: var(--light-text-color); /* icons color */
     margin: 0 0.3rem;
 }
