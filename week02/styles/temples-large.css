@@ -1,18 +1,60 @@
-/* Larger Views ******************************/
+
+/* large view navigation ************************************/
 @media (min-width: 740px) {
-	header {
+    header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-	nav ul {
-		justify-content: flex-end;
+
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
 		flex-direction: row;
 	}
-	nav a {
+
+	.navigation a {
+		display: block;
 		flex: 1 1 100%;
 	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
 }
+/* large view navigation hamburger Menu*************************/
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
 
 /* Footer */
 .main-footer {

@@ -8,7 +8,6 @@ body {
 	font-family: "Sansita", sans-serif;
 }
 
-
 /* mobile **************************/
 header {
 	background-color: #bbb;
@@ -27,72 +26,30 @@ main {
     
 }
 
-
 h1 {
-    font-size: 2.0rem; 
-    padding: 1rem;
-    background-color: #333;
-    text-align: center;
-    font-family: 'Acme', Arial, sans-serif; 
-    color:#fff;}
-
-h2 {
-		font-size: 1.5rem;
-		color: navy;
-		text-align: left;
-		margin: 1rem;
-	}
-    
-
-h3 {
-    font-size: 1.2rem; 
-    color: darkgreen;
-}    
-
-
-
-/* movil view navigation */
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: _________;
-	________;
-	________;
-}
-#menu::before {
-	content: "☰";
+	font-size: 2rem;
 }
 
-#menu.open::before {
-	content: "❎";
+nav {
+	background-color: #36454f;
 }
 
-.navigation {
+nav ul {
+	list-style: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	list-style: none;
-	background-color: #4e63a7fb;
-	color: #fff;
 }
 
-.navigation li {
-	display: none;
-}
-
-.navigation a {
+nav a {
 	display: block;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
 	color: #fff;
-    font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
 }
-.navigation a:hover {
+
+nav a:hover {
 	text-decoration: underline double;
 	background-color: #eee;
 	color: #000;
@@ -102,24 +59,6 @@ h3 {
 	color: yellow;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
-/*
-.active::before {
-	content: "📍"; 
-}*/
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
-}
-
-
-
 
 
 
@@ -127,8 +66,10 @@ h3 {
 	font-weight: 700;border-bottom: 1px solid #777; margin-bottom: 1rem;
 }
 
-
-
+body {font-family: Roboto, sans-serif;}
+h1 {font-size: 2.5rem; padding: 1rem;background-color: #333;text-align: center;font-family: 'Acme', Arial, sans-serif; color:#fff;}
+h2 {font-size: 2rem; text-align: center}
+h3 {font-size: 1.5rem; color: darkgreen;}
 section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
 .container {display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 25px;place-items: center;}
 
@@ -154,6 +95,7 @@ figcaption {font-size: smaller;}
 .saturate {filter: saturate(50%);}
 
 .shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left;}
+
 
 .mbm-difference{mix-blend-mode:difference;}
 
