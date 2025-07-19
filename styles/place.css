@@ -14,6 +14,12 @@ h1 {
     text-align:center;
     color:#ffffff
 }
+h2 {
+    font-size: 1rem;
+	font-family: Acme, Arial, sans-serif;
+    text-align:center;
+    color:#0b2273
+}
 
 .header-card-blue {
     background-color: #619bc2;
