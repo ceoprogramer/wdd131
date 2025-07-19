@@ -14,19 +14,7 @@ h1 {
     text-align:center;
     color:#ffffff
 }
-/*
-.header-card-blue {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	background-color: #619bc2;
-	margin: 0 auto;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-   
 
-}*/
 .header-card-blue {
     background-color: #619bc2;
     /*border-radius: 1.5rem; More rounded corners */
@@ -35,8 +23,8 @@ h1 {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    border-top-left-radius: 1.5rem; /* Bordes redondeados */
-    border-top-right-radius: 1.5rem; /* Bordes redondeados */
+    border-top-left-radius: 1.5rem; 
+    border-top-right-radius: 1.5rem; 
 }
 
 
@@ -66,10 +54,10 @@ h1 {
     width: 100%;
     padding: 2rem;
     text-align: center;
-    display: flex; /* Usa flexbox para el diseño interno */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente dentro de la tarjeta */
-    gap: 1.5rem; /* Espacio entre los elementos de la tarjeta */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1.5rem; 
 }
 .weather-icon {
     display: flex;
@@ -100,24 +88,23 @@ footer{
     color: #ffffff;
     font-size: smaller;
     text-align: center;
-    border-bottom-left-radius: 1.5rem; /* Bordes redondeados */
-    border-bottom-right-radius: 1.5rem; /* Bordes redondeados */
+    border-bottom-left-radius: 1.5rem; 
+    border-bottom-right-radius: 1.5rem; 
 
    
 }
-
 
 .main-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Espacio entre las secciones principales */
+    gap: 1rem; 
 }
 
         /* Media queries to responsive */
         @media (min-width: 640px) { /* Small screens (sm) */
             .main-container {
-                max-width: 600px; /* Ancho máximo para pantallas pequeñas */
+                max-width: 600px; 
             }
             .header-card-blue, .header-card-yellow {
                 font-size: 35px;
@@ -129,7 +116,7 @@ footer{
 
         @media (min-width: 768px) { /* Medium screens (md) - Tablets */
             .main-container {
-                max-width: 700px; /* Max Width */
+                max-width: 700px; 
             }
             .header-card-blue, .header-card-yellow {
                 font-size: 40px;
