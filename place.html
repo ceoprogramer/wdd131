@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="Place I wish to visit">
+    <meta name="author" content="Fabiola Sánchez"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+   
+    <div class="main-container">
+
+        <div class="weather-card">
+            <div class="header-card-blue">
+                <h1>Lago Bled</h1>
+                
+            </div>
+            <div class="header-card-bluelight"> </div>
+
+            <div class="hero">
+                <picture>
+                    <source srcset="images/Lago-Bled-eslovenia-large.webp" media="(min-width: 900px)">
+                    <source srcset="images/Lago-Bled-eslovenia-medium.webp" media="(min-width: 500px)">
+                    <img src="images/Lago-Bled-eslovenia-small.webp" alt="Lago Bled" width="450" height="281">
+                </picture>
+            </div>
+            <br>
+
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">Current Weather</h1>
+
+        <!-- <div class="weather-icon">
+                &#9728; Unicode for cloud with rain (or choose another like &#9728; for sun) 
+            </div>-->
+            <div class="weather-icon">
+                <img src="images/weather_clouds_sun_sunny_icon.svg" width="80px" height="80px">
+            </div>
+
+            <div class="text-gray-700 text-lg mb-4">
+                <p><span class="font-semibold">Temperature:</span> <span id="display-temp">40</span>&deg;F</p>
+                <p><span class="font-semibold">Wind Speed:</span> <span id="display-wind-speed">10</span> mph</p>
+                <p><span class="font-semibold">Conditions:</span> Cloudy</p>
+            </div>
+            
+            <div class="blue-card">
+                <p class="text-xl font-semibold">Windchill Factor:</p>
+                <p id="windchill-display" class="text-3xl font-bold mt-2">--&deg;F</p>
+            </div>
+
+            <p class="text-sm text-gray-500">
+                Windchill calculated based on current temperature and wind speed.
+            
+            </p>
+            <br>
+            <footer>
+                <p id="year"></p>
+                <p id="medium"></p>
+            </footer>
+        </div>
+
+    </div>
+ 
+</body>
+</html>
