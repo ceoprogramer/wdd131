@@ -44,6 +44,20 @@ h2 {
     border-top-right-radius: 1.5rem; 
 }
 
+.header-card-blue::after {
+            content: ''; /* empty content for pseudo-elements */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(24, 105, 182, 0)); 
+            pointer-events: none; 
+            border-top-left-radius: var(--border-radius-large);
+            border-top-right-radius: var(--border-radius-large);
+        }
+
+
 
 .header-card-bluelight {
     background-color:#0cb8cf46;
