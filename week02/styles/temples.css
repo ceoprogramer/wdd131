@@ -124,7 +124,12 @@ h3 {
 
 
 section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
-.container {display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 25px;place-items: center;}
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
 
 figure {background-color:#fff;}
 img { width: 100%; height: auto; margin: .5rem;}

@@ -1,6 +1,6 @@
 
 /* large view navigation ************************************/
-@media (min-width: 740px) {
+@media (min-width: 1200px) {
     header {
 		display: flex;
 		align-items: center;

@@ -1,0 +1,176 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+    text-align:center;
+    color:#ffffff
+}
+/*
+.header-card-blue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-color: #619bc2;
+	margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+   
+
+}*/
+.header-card-blue {
+    background-color: #619bc2;
+    /*border-radius: 1.5rem; More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 1.5rem; /* Bordes redondeados */
+    border-top-right-radius: 1.5rem; /* Bordes redondeados */
+}
+
+
+.header-card-bluelight {
+    background-color:#0cb8cf46;
+    /*border-radius: 1.5rem; More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    
+
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.weather-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex; /* Usa flexbox para el diseño interno */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente dentro de la tarjeta */
+    gap: 1.5rem; /* Espacio entre los elementos de la tarjeta */
+}
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #3b82f6; /* Blue color for icon */
+    
+}
+.blue-card{
+    background-color: #a1bfe8;
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+   
+}
+footer{
+    background-color: #6f8098;
+    /*border-radius: 1.5rem; More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   
+    width: 100%;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: smaller;
+    text-align: center;
+    border-bottom-left-radius: 1.5rem; /* Bordes redondeados */
+    border-bottom-right-radius: 1.5rem; /* Bordes redondeados */
+
+   
+}
+
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espacio entre las secciones principales */
+}
+
+        /* Media queries to responsive */
+        @media (min-width: 640px) { /* Small screens (sm) */
+            .main-container {
+                max-width: 600px; /* Ancho máximo para pantallas pequeñas */
+            }
+            .header-card-blue, .header-card-yellow {
+                font-size: 35px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 768px) { /* Medium screens (md) - Tablets */
+            .main-container {
+                max-width: 700px; /* Max Width */
+            }
+            .header-card-blue, .header-card-yellow {
+                font-size: 40px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (min-width: 1024px) { /* Large screens (lg) - Laptops */
+            .main-container {
+                max-width: 900px; 
+            }
+            .header-card-blue, .header-card-yellow {
+                font-size: 45px;
+            }
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (min-width: 1280px) { /* Extra large screens (xl) - Desktops */
+            .main-container {
+                max-width: 1100px; 
+            }
+            .header-card-blue, .header-card-yellow {
+                font-size: 50px;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+
+
+/*footer {
+    width: 350px;
+    margin: 0 auto;
+    background-color: #6f8098;
+    color: #ffffff;
+    font-size: smaller;
+    padding: 0.5rem;
+}*/
+
