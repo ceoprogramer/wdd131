@@ -1,6 +1,17 @@
+:root {
+        --primary-color: #619bc2; /* Color principal para encabezados y elementos clave */
+        --secondary-color: #0cb8cf46; /* Color secundario para fondos o acentos */
+        --text-light-color: #ffffff; /* Color de texto claro */
+        --text-dark-color: #3b82f6; /* Color de texto oscuro para iconos */
+        --background-light-gray: #f0f4f8; /* Fondo gris claro */
+        --card-background-color: #ffffff; /* Fondo de tarjeta */
+        --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra */
+        --border-radius-large: 1.5rem; /* Radio de borde grande */
+        }
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f4f8; /* Light blue-gray background */
+    background-color: var(--background-light-gray); /* Light blue-gray background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +23,7 @@ h1 {
 	font-size: 2rem;
 	font-family: Acme, Arial, sans-serif;
     text-align:center;
-    color:#ffffff
+    color: var(--text-light-color);
 }
 h2 {
     font-size: 1rem;
