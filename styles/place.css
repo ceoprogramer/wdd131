@@ -137,7 +137,7 @@ footer{
             .main-container {
                 max-width: 600px; 
             }
-            .header-card-blue, .header-card-yellow {
+            .header-card-blue, .header-card-bluelight {
                 font-size: 35px;
             }
             h1 {
@@ -149,7 +149,7 @@ footer{
             .main-container {
                 max-width: 700px; 
             }
-            .header-card-blue, .header-card-yellow {
+            .header-card-blue, .header-card-bluelight {
                 font-size: 40px;
             }
             h1 {
@@ -161,7 +161,7 @@ footer{
             .main-container {
                 max-width: 900px; 
             }
-            .header-card-blue, .header-card-yellow {
+            .header-card-blue, .header-card-bluelight {
                 font-size: 45px;
             }
             h1 {
@@ -173,7 +173,7 @@ footer{
             .main-container {
                 max-width: 1100px; 
             }
-            .header-card-blue, .header-card-yellow {
+            .header-card-blue, .header-card-bluelight {
                 font-size: 50px;
             }
             h1 {
