@@ -63,14 +63,15 @@ const temples = [
     
 ];
 
-// Llama a la función para crear las tarjetas cuando la página carga
+// call function to create cards when page is loaded
 document.addEventListener('DOMContentLoaded', () => {
     createTemplateCard(temples); // Pasa todos los templos inicialmente
     updateFooterDates(); // Llama a la función para actualizar el pie de página
 });
 
 function createTemplateCard(filteredTemples) {
-    // Limpiar el contenido actual del grid antes de añadir nuevos elementos
+    
+    // Clean grid before add new elements
     resGrid.innerHTML = '';
 
     filteredTemples.forEach(temple => {
@@ -95,25 +96,34 @@ function createTemplateCard(filteredTemples) {
         card.appendChild(area);
         card.appendChild(img);
 
-        // Añadir la tarjeta al contenedor .res-grid
+      
+        //Add card to contain .res-grid
         resGrid.appendChild(card);
     });
 }
 
 
 
-// Puedes añadir la lógica de filtrado aquí si los botones de navegación son para filtrar
-// Por ejemplo:
-// document.querySelector('.navigation').addEventListener('click', (event) => {
-//     if (event.target.tagName === 'A') {
-//         const filterType = event.target.textContent.toLowerCase();
-//         let filtered = [];
-//         if (filterType === 'home') {
-//             filtered = temples;
-//         } else if (filterType === 'old') {
-//             filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-//         }
-//         // ... añadir más lógica de filtrado
-//         createTemplateCard(filtered);
-//     }
-// });
+
+document.querySelector('.navigation').addEventListener('click', (event) => {
+     if (event.target.tagName === 'A') {
+         const filterType = event.target.textContent.toLowerCase();
+         let filtered = [];
+         if (filterType === 'home') {
+             filtered = temples;
+        } else if (filterType === 'old') {
+             filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+        
+        } else if (filterType === 'new') {
+             filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2019);
+        } else if (filterType === 'large') {
+            
+            filtered = temples.filter(temple => temple.area > 100000);
+        } else if (filterType === 'small') {
+            
+            filtered = temples.filter(temple => temple.area < 10000);
+        }
+        
+        createTemplateCard(filtered);
+     }
+ });
