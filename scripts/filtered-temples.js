@@ -115,10 +115,10 @@ document.querySelector('.navigation').addEventListener('click', (event) => {
              filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
         
         } else if (filterType === 'new') {
-             filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2019);
+             filtered = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
         } else if (filterType === 'large') {
             
-            filtered = temples.filter(temple => temple.area > 100000);
+            filtered = temples.filter(temple => temple.area > 90000);
         } else if (filterType === 'small') {
             
             filtered = temples.filter(temple => temple.area < 10000);
