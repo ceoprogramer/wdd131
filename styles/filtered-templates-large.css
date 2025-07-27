@@ -1,0 +1,75 @@
+
+/* large view navigation ************************************/
+@media (min-width: 1200px) {
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+/* large view navigation hamburger Menu*************************/
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: #1D4D72;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9em;
+}
+
+.main-footer p {
+    margin: 0.5rem 0;
+}
+
+.main-footer .fas {
+    color: #f0f0f0; /* icons color */
+    margin: 0 0.3rem;
+}
