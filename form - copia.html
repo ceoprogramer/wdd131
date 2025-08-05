@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Place I would like to visit">
+    <meta name="author" content="Fabiola Sánchez Solano"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    
+
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+   <header> 
+        
+   </header> 
+   <main>
+        <div class="main-container">
+
+            <div class="form-card">
+                <div class="header-card-blue">
+                    <h1>Product Review</h1>
+                </div>
+
+                <div>
+                   <label for="fruit">Product name <abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+                    <input type="text" id="fruit" name="fruit" list="l1" required>
+                    <hr>
+
+                    <label for="r">INPUT: range, min, max, datalist, required</label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                    <div class="ref">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                    </div>
+                    <hr>
+
+                    <label>INPUT: radio, required, common name, altered look with CSS stars</label>
+                    <div class="stars">
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    </div>
+                    <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
+                    <hr>
+                    <div class="vcentered">
+                        <label for="task" data-content="Completed the Module" class="inline">INPUT: checkbox, CSS size</label>
+                        <input type="checkbox" id="task" name="task" value="task">
+                    </div>
+                    <div class="ref"><a href="https://codepen.io/kathykato/pen/xxGObEp">CheckBox Line Through Source</a></div>
+
+                    <datalist id="l1">
+                        <option>Banana</option>
+                        <option>Cherry</option>
+                        <option>Apple</option>
+                        <option>Strawberry</option>
+                        <option>Lemon</option>
+                        <option>Orange</option>
+                    </datalist>
+
+                </div>
+                
+              
+                <br>
+                <footer>
+                    <p id="year"></p>
+                    <p id="medium"></p>
+                </footer>
+            </div>
+
+        </div>
+     </main>
+    </body>
+   
+</html>

@@ -1,0 +1,219 @@
+:root {
+        --primary-color: #619bc2; /* Color principal para encabezados y elementos clave */
+        --secondary-color: #0cb8cf46; /* Color secundario para fondos o acentos */
+        --text-light-color: #ffffff; /* Color de texto claro */
+        --text-dark-color: #3b82f6; /* Color de texto oscuro para iconos */
+        --background-light-gray: #f0f4f8; /* Fondo gris claro */
+        --card-background-color: #ffffff; /* Fondo de tarjeta */
+        --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra */
+        --border-radius-large: 1.5rem; /* Radio de borde grande */
+       
+        }
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+	margin: 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid #bbb;
+}
+
+hr {
+	margin-bottom: 40px;
+}
+
+label {
+	display: block;
+	font-weight: 700;
+}
+
+
+.header-card-blue {
+    background-color: #b57fe7;
+    /*border-radius: 1.5rem; More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1.5rem; 
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+        /* Media queries to responsive */
+        @media (min-width: 640px) { /* Small screens (sm) */
+            .main-container {
+                max-width: 600px; 
+            }
+            .header-card-blue, .header-card-bluelight {
+                font-size: 35px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 768px) { /* Medium screens (md) - Tablets */
+            .main-container {
+                max-width: 700px; 
+            }
+            .header-card-blue, .header-card-bluelight {
+                font-size: 40px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (min-width: 1024px) { /* Large screens (lg) - Laptops */
+            .main-container {
+                max-width: 900px; 
+            }
+            .header-card-blue, .header-card-bluelight {
+                font-size: 45px;
+            }
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (min-width: 1280px) { /* Extra large screens (xl) - Desktops */
+            .main-container {
+                max-width: 1100px; 
+            }
+            .header-card-blue, .header-card-bluelight {
+                font-size: 50px;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+
+
+input[type=text], input[type=range], input[type=radio] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#alpha:focus, #fruit:focus {
+	background-color: #eee;
+}
+
+#alpha:valid, #fruit:valid {
+	background-color: #bed;
+}
+#alpha:invalid, #alpha:invalid {
+	background-color: #fff0f3;
+	border: 1px solid red;
+}
+#alpha:invalid::before {
+	content: "❌";
+}
+
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+/* Checkbox *******************************************/
+input[type=checkbox] {
+	margin-left: 10px;
+}
+/* Note the enlargement from the standard, tiny checkbox */
+#task {
+	width: 25px;
+	height: 25px;
+}
+
+.vcentered {
+	display: flex;
+	align-items: center;
+}
+
+/* other */
+.inline {
+	display: inline;
+}
+
+.ref {
+	font-size: 13px;
+	margin-top: 1rem;
+}
