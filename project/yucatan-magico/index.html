@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucatan Magico. Home Page</title>
+    <meta name="description"
+        content="Yucatán Mágico. Home Page. Web Site with info about tourist places to visit in Yucatán like cenotes, beaches and Mayan arqueology">
+    <meta name="author" content="Fabiola Sánchez">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles/map.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts/map.js" defer></script>    
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container"> <img class="logo" src="images/logo-yucatan-magico-nobg.png" alt="Yucatán Mágico">
+        </div>
+        <a id="menu" href="#"></a>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="app.html#all">All</a></li>
+                <li><a href="app.html#cenotes">Cenotes</a></li>
+                <li><a href="app.html#beaches">Beaches</a></li>
+                <li><a href="app.html#arqueology">Arqueology</a></li>
+                <li><a href="app.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <h1>Yucatán Mágico</h1>
+                <h2>Visit Yucatán</h2>
+                <a href="app.html#all" class="btn"><strong>More</strong></a>
+                <a href="app.html#contact" class="btn"><strong>Contac US</strong></a>
+            </div>
+        </section>
+        <br>
+
+
+        <section id="featuredRivers" class="row-white">
+            <div class="container">
+                <h1 class="text-center">Magic Places in Yucatán</h1>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <picture>
+                                <source srcset="images/cenotes/papakal03.jpg" type="image/jpg">
+
+                                <img width="540" height="500" src="images/cenotes/papakal03.jpg" alt="Cenotes"
+                                    fetchpriority="auto" class="img-responsive">
+
+                            </picture>
+                            <div class="intro">
+                                <h3 class="text-h">Natural Cenotes</h3>
+                                <p class="text-p">One of the wonders found in the state of Yucatán are the cenotes. They
+                                    are a type of natural pool, and each one is a work of art from nature due to the
+                                    unique formations of stalactites, stalagmites, and columns that have formed over
+                                    millions of years.</p>
+                                <p class="text-center"><a href="app.html#cenotes" class="btn"><strong>More</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <picture>
+
+                                <source srcset="images/arqueology/chichen_Itza_600.jpg" type="image/jpg">
+                                <img width="540" height="500" src="images/arqueology/chichen_Itza_600.jpg"
+                                    alt="Arqueology" fetchpriority="auto" class="img-responsive">
+
+                            </picture>
+                            <div class="intro">
+                                <h3 class="text-h">Maya Arqueology</h3>
+                                <p class="text-p">
+                                    Yucatán has a historical legacy like few other places in the world. Its lands
+                                    contain majestic ceremonial centers, capital cities, and beautiful buildings of
+                                    carved stone and perfect architecture.
+                                    Chichén Itzá, Uxmal, Ek Balam, Labna, Dzibilchaltún, and Mayapán, among many others,
+                                    are the heritage of one of the worlds greatest civilizations.
+                                </p>
+                                <p class="text-center"><a href="app.html#arqueology" class="btn"><strong>More</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <picture>
+                                <source srcset="images/beaches/progreso02.jpg" type="image/jpg">
+
+                                <img width="540" height="500" src="images/beaches/progreso02.jpg" alt="Playas"
+                                    fetchpriority="auto" class="img-responsive">
+
+                            </picture>
+                            <div class="intro">
+                                <h3 class="text-h">Beaches</h3>
+                                <p class="text-p">One of the wonders found in the state of Yucatán are the cenotes. They
+                                    are a type of natural pool, and each one is a work of art from nature due to the
+                                    unique formations of stalactites, stalagmites, and columns that have formed over
+                                    millions of years.</p>
+                                <p class="text-center"><a href="app.html#beaches" class="btn"><strong>More</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="blue-special">
+            <div class="container">
+                <div class="row">
+                    <div class="features">
+                        <h2 class="center">Reasons to visit Yucatán</h2>
+                        <div class="clearfix"></div>
+
+                        <div class="col-sm-12">
+
+                            <div class="feature-wrap">
+
+                                <picture>
+                                    <source srcset="images/flagMexico.png" type="image/png">
+                                    <img width="200" height="200" src="images/flagMexico.png" class="img-responsive"
+                                        alt="Yucatán México">
+                                </picture>
+
+                                <ul>
+                                    <li><span class="roboto">HISTORY &amp; CULTURE: </span> Yucatán is the birthplace of
+                                        the Mayan civilization, with emblematic archaeological sites that offer a
+                                        fascinating glimpse into the past. &nbsp;&nbsp;<strong>More Experience:</strong>
+                                    </li>
+                                    <li><span class="roboto">NATURAL WONDERS:</span> Cenotes, which are freshwater pools
+                                        formed by underground caves, are a unique feature of the peninsula. They are
+                                        perfect places for swimming, diving, and exploring:. &nbsp;&nbsp;<strong>Enjoy
+                                            nature</strong></li>
+                                    <li><span class="roboto">BEACHES:</span> Yucatán has beautiful beaches on the Gulf
+                                        of Mexico coast, such as Progreso and Celestún, ideal for relaxing and enjoying
+                                        the sun and sea: &nbsp;&nbsp;<strong>More Relax</strong></li>
+                                    <li><span class="roboto">GASTRONOMY:</span> Yucatecan cuisine is rich in flavors and
+                                        traditions, with dishes such as cochinita pibil, poc chuc, panuchos, and
+                                        salbutes that delight the most discerning palates: &nbsp;&nbsp;<strong>Delicious
+                                            Food Options</strong></li>
+                                    <li><span class="roboto">PLEASANT CLIMATE:</span> Yucatán enjoys a warm, sunny
+                                        climate for most of the year, allowing for a variety of outdoor activities:
+                                        &nbsp;&nbsp;<strong>More outdoor activities</strong></li>
+                                    <li><span class="roboto">SECURITY:</span> Yucatán is considered one of the safest
+                                        states in Mexico, providing peace of mind to visitors:
+                                        &nbsp;&nbsp;<strong>Tranquility and peace</strong></li>
+                                    <li><span class="roboto">MAGICAL TOWNS:</span> Yucatán has several Magical Towns,
+                                        such as Izamal and Valladolid, which offer unique experiences with their
+                                        colonial architecture, traditions, and peaceful atmosphere:
+                                        &nbsp;&nbsp;<strong>Wonderful experiences</strong></li>
+                                    <li><span class="roboto">HACIENDAS:</span> Colonial haciendas, many of which have
+                                        been restored and converted into boutique hotels or restaurants, are another
+                                        fascinating tourist attraction in Yucatán: &nbsp;&nbsp;<strong>History and
+                                            Culture</strong></li>
+
+                                </ul>
+                                <br>
+                                <br>
+
+                            </div>
+
+                        </div>
+                    </div><!--/.features-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </section><!--/#feature-->
+
+        <section class="hero-fire">
+            <div class="hero-content">
+                <h1>Stay & Enkoy the night!</h1>
+                <h2>Immerse yourself in the ultimate outdoor experience Mexico beaches.</h2>
+
+            </div>
+        </section>
+        <br>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="flex-item-form">
+                        <h2>Newsletter</h2>
+                        <form>
+                            <fieldset>
+                                <legend>Subscribe</legend>
+
+                                <div class="form-item column1"><label>Fullname: <input type="text" id="fullname"
+                                            name="fullname"></label></div>
+                                <div class="form-item column1"><label>Email: <input type="email" id="useremail"
+                                            name="useremail"></label></div>
+                                <div class="form-item column1"><label>Phone: <input type="tel" id="usrphone"
+                                            name="usrphone"></label></div>
+                                <button type="submit">Suscribe Newsletter</button>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="mapid"></div>
+
+                    <div id="ruinModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2 id="modal-title"></h2>
+                            <img id="modal-image" src="" alt="Imagen de la Ruina!">
+                            <p id="modal-description"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <br>
+        <footer class="main-footer">
+            <p id="year"></p>
+            <p id="medium"></p>
+        </footer>
+
+</body>
+
+</html>

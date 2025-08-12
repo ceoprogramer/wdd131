@@ -99,7 +99,7 @@ select:focus,
 textarea:focus {
     border-color: var(--secondary-color);
     outline: none;
-    /*box-shadow: 0 0 5px rgba(var(--secondary-color), 0.3);*/
+    
 }
 
 textarea {

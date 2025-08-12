@@ -1,0 +1,773 @@
+
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 20px;
+	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+  text-align:center;
+}
+
+h2 {
+    font-size: 20px;
+    text-align:center;
+    padding: 20px;
+}*/
+.txt-title {
+	
+	font-family: Acme, Arial, sans-serif;
+  text-align:center;
+  color: #5973a4;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 1px 2px 0px #bab5b5;
+  padding-bottom: 20px;
+}
+
+
+.text-gray{
+  font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+  text-align:center;
+  color:rgb(100, 100, 100);
+  padding:10px;
+
+}
+.text-bold{
+    font-size: 20px;
+    font-weight: bold;
+	  font-family: Acme, Arial, sans-serif;
+    text-align:center;
+    color:rgb(60, 60, 60);
+    padding: 10px;
+
+}
+
+
+
+body {
+	font-family: Acme, Arial, sans-serfi;
+}
+
+
+.socialmedia a{
+    text-decoration:none;
+}
+
+.block-page-hero-background-image {
+    display: block;
+    width: 10%;
+    
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+
+.contactbanner {
+  background-image: url(../images/banner-yucatan.jpg); 
+  background-size:cover; 
+  background-position:center; 
+  background-repeat: no-repeat; /* No repeat image */
+
+  /* Height */
+  height: 80vh; /* It occupies 80% of the viewport's height. */
+  display: flex; /* Center the content vertically and horizontally */
+  flex-direction: column; 
+  align-items: center; /* Center Vertically */
+  
+  justify-content: center;
+  text-align: center; /* Align text into of .hero-content */
+  color: white; /* Color Text */
+  position: relative; /* */
+  overflow: hidden; /* To ensure that the contents do not overflow */
+}
+
+
+.contactbanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(220, 229, 247, 0.5);  */
+  z-index: 1; /* Ensures the overlay is behind the content */
+}
+
+.contactbanner-content {
+  position: relative;  /*Places content above the overlay */
+  z-index: 2;
+  max-width: 800px; 
+  padding: 20px;
+}
+
+
+.contactbanner p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  
+}
+
+.about {
+  background-image: url(../images/rafting05_600.jpg); 
+  background-size:cover; 
+  background-position:center; 
+  background-repeat: no-repeat; /* No repeat image */
+  background-color: #a9b8c3;
+  height: 80vh; /* It occupies 80% of the viewport's height. */
+  display: flex; /*  */
+  flex-direction: column; 
+  align-items:center; 
+ 
+  justify-content: center;
+  text-align: center; 
+  color: white; 
+  position: relative;
+  overflow: hidden; 
+}
+
+.about-content {
+  position: relative; /* Places content above the overlay */
+  z-index: 2;
+  max-width: 900px; 
+  max-height:max-content;
+  padding: 10px;
+}
+.about p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  
+}
+
+.about h1{
+    
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-align: left;
+  background: var(--orange);
+  height: 40px;
+  padding: 15px;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn:hover {
+  background-color: var(--apple-green);
+}
+
+.btn-secondary {
+  background-color: orange;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: var(--citrine);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* */
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+
+
+.article { 
+    top: 120px;
+    width: 100%;
+    padding: 20px;
+    opacity: 0.7;
+    background-color: #123a96;
+    color: #ffffff; 
+    margin: 20px auto; /* margin */
+    border-radius: 8px;
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    text-align: left; 
+    
+}
+.article img {
+    float: right;
+    display: block;
+    width: 150px;
+    height: auto;
+    box-shadow: inset 5em 1em gold;
+    border-radius: 5px;
+}
+
+.herocontact img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.herocontact h1{
+    
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.grid-container-banner{
+    display: grid;
+    grid-template-columns: 850px;
+    background-color:#cbd4dba5;
+    align-items: center; 
+    justify-content: center;
+   
+    
+}
+.grid-item-banner {
+    background-color: #F5F3F5;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align:left;
+    
+}
+
+.grid-item-image-banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* O fill, contain, scale-down, none */
+  object-position: center; /* O top, bottom, left, right, etc. */
+  display: block; 
+  margin: 0 auto; /* <-- This will center the image IF its parent container is wider than the image AND the image itself is smaller than 100% width or has a defined width. */
+
+
+}    
+.grid-container {
+    display: grid;
+    grid-template-columns: 280px 300px 280px;
+    background-color:#a9b8c3;
+    padding: 20px;
+}
+.grid-item {
+    background-color: #F5F3F5;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align:left;
+}
+.grid-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* O fill, contain, scale-down, none */
+  object-position: top; /* O top, bottom, left, right, etc. */
+ 
+}    
+
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: 410px 410px;
+    background-color:#a9b8c3;
+    padding: 10px;
+    align-items:center; 
+    justify-content:center;
+}
+.grid-item-contact {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    text-align:left;
+    object-fit: fill; /* O fill, contain, scale-down, none */
+    object-position:center; /* O top, bottom, left, right, etc. */
+}
+
+
+.flex-container {
+  display: flex;
+	background-color: #a9b8c3;
+	flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+
+}
+
+.flex-item {
+	width: 150px; 
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / 20%);
+	padding: 0.5rem;
+	background-color: #F5F3F5;
+	color: #333;
+}
+.flex-item-form {
+	width: 700px; 
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / 20%);
+	padding: 10px;
+	background-color: #f4f2f2;
+	color: #333;
+}
+
+.imagen-en-flex-item {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* O fill, contain, scale-down, none */
+  object-position: top; /* O top, bottom, left, right, etc. */
+}
+
+
+.flex-container-photo {
+  display: flex;
+	background-color: #ffffff;
+	flex-direction: row;
+  justify-content:left;
+  align-items: stretch;
+  padding: 10px;
+
+}
+
+.flex-item-photo {
+	width: 150px; 
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / 20%);
+	padding: 0.5rem;
+	background-color: #c9dcf0f9;
+	color: #333;
+  
+}
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: 600px auto;
+    background-color:rgba(27, 127, 204, 1);
+    padding: 20px;
+}
+.grid-item-footer {
+    background-color: #F5F3F5;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align:center;
+}
+
+  figcaption {
+    margin-top: 10px;
+    color: #233f80;
+    text-align:center;
+
+}
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 5rem;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--apple-green);
+
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+img {
+    vertical-align: middle
+}
+
+
+
+.img-responsive {
+    float: right;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    
+}
+
+.img-rounded {
+    border-radius: 6px
+}
+
+.img-thumbnail {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.img-circle {
+    border-radius: 50%
+}
+
+figcaption {
+    margin-top: auto; 
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* --- Styles for Featured Rivers Section --- */
+#featuredRivers {
+    padding: 50px 0px 70px 0px;
+    /* To ensure content stays within reasonable bounds and is centered */
+    max-width: 1200px; /* Adjust as needed for your desired max width */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Make the 'row' display as a flex container */
+.row {
+    display: flex; /* Makes direct children (col-sm-6) flex items */
+    /*flex-wrap: wrap;  Allows items to wrap to the next line on smaller screens */
+    gap: 20px; /* Adds space between your columns/cards */
+    justify-content: center; /* Centers the cards if there's extra space */
+    margin-right: 0; /* Remove negative margins if they cause issues */
+    margin-left: 0;  /* Remove negative margins if they cause issues */
+}
+
+/* Styles for the column elements */
+.col-sm-4 {
+    /* Use flex: 1 for equal distribution, and a min-width for wrapping */
+    /*flex: 1 1 33%;  Each column takes up roughly 45% of the space, allowing for gap */
+    flex: 1;
+    max-width: 400px; /* Optional: Sets a maximum width for each card */
+    min-width: 300px; /* Ensures cards don't get too small before wrapping */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+    padding: 0 10px; /* Add some padding to the sides within the column */
+}
+
+/* Adjust card styles for better appearance */
+.card {
+    position: relative;
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 400px; /* Set a minimum height for consistency */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-radius: 8px; /* Rounded corners for the card */
+    overflow: hidden;
+    background-color: #fff; /* Ensure card background is white */
+}
+
+.card img {
+    height: 300px; /* Fixed height for consistency, adjust as needed */
+    width: 100%;
+    object-fit: cover; /* Ensures image covers the area, cropping if necessary */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    transition: transform .4s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Slightly zoom on hover for effect */
+}
+
+.card:hover .text-p {
+    opacity: 1;
+    visibility: visible;
+    height: auto; /* Allow text to expand */
+}
+
+.intro {
+    position: absolute;
+    height: auto; /* Adjust height based on content */
+    max-height: 80px; /* Initial max-height */
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    padding: 10px; /* More padding */
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.85); /* Slightly darker overlay */
+    transition: max-height .4s ease-in-out, background-color .4s ease; /* Transition for max-height */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.card:hover .intro {
+    max-height: 230px; /* Expand on hover to reveal full text */
+    background-color: rgba(27, 27, 27, 0.95); /* Darker on hover */
+}
+
+.text-h { /* Applied to h3 inside .intro */
+    margin: 0 0 10px 0; /* Adjust margin */
+    text-transform: uppercase;
+    font-size: 1.3rem; /* Adjusted font size */
+    text-align: center;
+    color: #fff;
+}
+
+.text-p { /* Applied to p inside .intro */
+    font-size: 0.90rem; /* Smaller font for paragraph */
+    text-align: left;
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity .4s ease-in-out, visibility .4s ease-in-out; /* Transition for text reveal */
+}
+
+/* Adjust the button styling within the card if needed */
+.intro .btn {
+    margin-top: 5px; /*Space above button */
+    padding: 12px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    background-color: var(--orange); /* Example color */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:inlie-flexbox; /* Ensure it's treated as a block for padding/margin */
+}
+
+.intro .btn:hover {
+    background-color: var(--apple-green);
+}
+
+/* Ensure the main container for your new section is wide enough */
+.container {
+    max-width: 1200px; /* Matches the #featuredRivers max-width */
+    margin: 0 auto;
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+/* Adjust text alignment for the new elements */
+.text-center {
+    text-align: center;
+}
+
+.blue-special {
+    background-color: rgba(27, 127, 204, 1);
+    /*background-color: var(--xanthouse);*/
+    padding: 20px;
+}
+.blue-special h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 1px 2px 0px #686868;
+    padding-bottom: 10px;
+}
+.roboto {
+    font-family: 'Lato', sans-serif;
+    text-shadow: none;
+    font-size: 20px;
+    /*color: #4f4640;*/
+    color: #fff;
+    
+}
+.blue-special li {
+    /*color: #4f4343;*/
+    color: #fff;
+    padding: 5px;
+    
+
+}
+
+.hero-contact-fire {
+  background-image: url(../images/beaches/sunset-beach.jpg); 
+  background-size:cover; 
+  background-position:center; 
+  background-repeat: no-repeat; /* No repeat image */
+
+  /* Altura */
+  height: 80vh; /* It occupies 80% of the viewport's height. */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+  color: white; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.flex-container-trip {
+  display: flex;
+	background-color: #ffffff;
+	flex-direction: row;
+  justify-content:center;
+  align-items: stretch;
+  padding: 10px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  gap: 20px; /* Add some space between the trip items */
+
+}
+
+.flex-item-trip {
+	width: 350px; 
+	margin: 1rem;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 0.5rem;
+	background-color: #fffffff9;
+	color: #333;
+  text-align: center; 
+  
+}
+
+.imagen-flex-item-trip {
+    width: 100%; /* Image fills the width of its parent (.flex-item-trip) */
+    height: 200px; /* Define a fixed height for consistency */
+    object-fit: cover; /* Image will cover the area, possibly cropping */
+    object-position: center; /* Center the image within its container */
+    border-radius: 4px; /* Small border-radius for image */
+    margin-bottom: 15px; /* Space between image and heading */
+}
+
+.flex-item-trip p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Space below paragraph */
+    padding: 0 10px; /* Add some horizontal padding to the text */
+    text-align: justify;
+}
+
+.flex-item-trip ul {
+    list-style:circle; /* Removes default bullet points if you don't want them */
+    text-align: left; /* Aligns the text within the list horizontally */
+    margin-left:10px;
+    padding-left:25px;
+    /* width: 100%; Ensures the ul takes full width to center its content */
+}
+
+
+.flex-item-trip h2.txt-blue {
+	
+	font-family: Lato, sans-serif;
+  text-align:center;
+  color: #5973a4;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+
+   table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 25px auto;
+            box-shadow: 0 2px 10px rgba(161, 197, 230, 0.1);
+            background-color: #eefbfd;
+            align-content: center;
+        }
+  caption {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0056b3;
+      text-align: left;
+      padding: 10px 0;
+  }
+  th, td {
+      border: 1px solid #5e5d5d;
+      padding: 25px;
+      text-align: left;
+  }
+  th {
+      background-color: #e2e2e2;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+  }
+  td strong {
+      color: #0056b3;
+  }
