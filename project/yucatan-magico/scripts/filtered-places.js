@@ -7,6 +7,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show'); // class 'show' in hamburger button
 });
 
+//Store data
 const places = [
     {
         templeName: "Kankirixche",
@@ -92,6 +93,7 @@ function createHome(){
     window.location.href = 'index.html';
     
 }
+
 const paginaContactoHTML = `
 <main>
     <section class="contactbanner">
