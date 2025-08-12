@@ -184,7 +184,7 @@ function createTemplateCard(filteredTemples) {
         dedication.innerHTML = `<span class="label">Info:</span> ${temple.dedicated}`;
        
         img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templeName} Temple`); 
+        img.setAttribute("alt", `${temple.templeName} Place`); 
         img.setAttribute("loading", "lazy");
 
         card.appendChild(name);
