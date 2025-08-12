@@ -226,11 +226,11 @@ document.querySelector('.navigation').addEventListener('click', (event) => {
          let filtered = [];
         if (filterType === 'all') {
              filtered = places;
-        } else if (filterType === 'cenotes') {
-             filtered = places.filter(temple => temple.area === "Cenote");
-        
+                
         } else if (filterType === 'beaches') {
              filtered = places.filter(temple => temple.area === "Beach");
+        } else if (filterType === 'cenotes') {
+             filtered = places.filter(temple => temple.area === "Cenote");     
              
         } else if (filterType === 'arqueology') { 
             filtered = places.filter(temple => temple.area === "Arqueology");
