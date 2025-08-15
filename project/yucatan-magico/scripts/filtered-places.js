@@ -164,13 +164,9 @@ function createContact(){
     resGrid.innerHTML = paginaContactoHTML;
 }    
 
-function createTemplateCard(filteredTemples) {
-    
-    // Clean grid before add new elements
-    
-    
+function createTemplateCard(filteredTemples) { 
+    // Clean grid before add new elements  
     resGrid.innerHTML = '';
-
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
@@ -193,8 +189,6 @@ function createTemplateCard(filteredTemples) {
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(img);
-
-      
         //Add card to contain .res-grid
         resGrid.appendChild(card);
     });
@@ -205,8 +199,6 @@ function runFilterBasedOnHash() {
     if (hash) {
         // Look for the link of menu with ancle 
         const targetLink = document.querySelector(`.navigation a[href="#${hash}"]`);
-
-       
         if (targetLink) {
             targetLink.click();
         }
