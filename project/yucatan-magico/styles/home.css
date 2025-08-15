@@ -18,24 +18,33 @@
     --lato-regular-font-style: normal;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+	font-family: "Sansita", sans-serif;
+}
 
 header {
 	background-color:var(--white);
 	display: flex;
 	justify-content:space-between; 
+   align-items: center; /* Centra verticalmente el logo y el menú */
   padding: 20px;
   margin: 0 auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 30px #333;
 }
 
-
- 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main {
+	max-width: 1200px;
+    margin: 0 auto;
+    
 }
+ 
+
 
 
 .logo {
@@ -166,6 +175,10 @@ nav {
 	content: "X";
 }
 
+
+.stdlf {
+	font-weight: 700;border-bottom: 1px solid #777; margin-bottom: 1rem;
+}
 
 
 /* Footer */
@@ -333,14 +346,17 @@ nav {
   color: var(--citrine);
 }
 
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-  .hero {
-    height: 60vh; /* */
-  }
-  .hero h1 {
-    font-size: 2em;
-  }
+
+/* Media query large screen */
+@media only screen and (min-width: 32rem) {
+    .hero {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 o 3 columns in tablets/desktop */
+    }
+}
+@media only screen and (min-width: 64rem) {
+    .hero {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* More columnas in desktop */
+    }
 }
 
 
